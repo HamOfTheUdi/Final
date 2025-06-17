@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  commande: one
+  details: MyText
+  statut: MyString
+  raison_retard: MyString
+
+two:
+  commande: two
+  details: MyText
+  statut: MyString
+  raison_retard: MyString

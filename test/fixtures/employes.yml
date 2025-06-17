@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  specialite: MyString
+  garage: one
+
+two:
+  nom: MyString
+  specialite: MyString
+  garage: two

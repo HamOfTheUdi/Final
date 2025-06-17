@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2025-06-17
+  type_service: MyString
+  cout: 9.99
+  voiture: one
+  employe: one
+
+two:
+  date: 2025-06-17
+  type_service: MyString
+  cout: 9.99
+  voiture: two
+  employe: two
