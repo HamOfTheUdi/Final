@@ -14,7 +14,6 @@ class PartiesTest < ApplicationSystemTestCase
     visit parties_url
     click_on "New partie"
 
-    fill_in "Commande", with: @party.commande_id
     fill_in "Nom", with: @party.nom
     fill_in "Prix", with: @party.prix
     fill_in "Stock", with: @party.stock
@@ -29,7 +28,6 @@ class PartiesTest < ApplicationSystemTestCase
     visit party_url(@party)
     click_on "Edit this partie", match: :first
 
-    fill_in "Commande", with: @party.commande_id
     fill_in "Nom", with: @party.nom
     fill_in "Prix", with: @party.prix
     fill_in "Stock", with: @party.stock

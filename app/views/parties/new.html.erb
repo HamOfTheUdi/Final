@@ -1,0 +1,11 @@
+<% content_for :title, "New partie" %>
+
+<h1>New partie</h1>
+
+<%= render "form", party: @party %>
+
+<br>
+
+<div>
+  <%= link_to "Back to parties", parties_path %>
+</div>

@@ -17,7 +17,7 @@ class VoituresControllerTest < ActionDispatch::IntegrationTest
 
   test "should create voiture" do
     assert_difference("Voiture.count") do
-      post voitures_url, params: { voiture: { anee: @voiture.anee, couleur: @voiture.couleur, garage_id: @voiture.garage_id, marque: @voiture.marque, numero_immatriculation: @voiture.numero_immatriculation, proprietaire: @voiture.proprietaire, statut: @voiture.statut } }
+      post voitures_url, params: { voiture: { anee: @voiture.anee, couleur: @voiture.couleur, garage_id: @voiture.garage_id, marque: @voiture.marque, numero_immatriculation: @voiture.numero_immatriculation, statut: @voiture.statut } }
     end
 
     assert_redirected_to voiture_url(Voiture.last)
@@ -34,7 +34,7 @@ class VoituresControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update voiture" do
-    patch voiture_url(@voiture), params: { voiture: { anee: @voiture.anee, couleur: @voiture.couleur, garage_id: @voiture.garage_id, marque: @voiture.marque, numero_immatriculation: @voiture.numero_immatriculation, proprietaire: @voiture.proprietaire, statut: @voiture.statut } }
+    patch voiture_url(@voiture), params: { voiture: { anee: @voiture.anee, couleur: @voiture.couleur, garage_id: @voiture.garage_id, marque: @voiture.marque, numero_immatriculation: @voiture.numero_immatriculation, statut: @voiture.statut } }
     assert_redirected_to voiture_url(@voiture)
   end
 

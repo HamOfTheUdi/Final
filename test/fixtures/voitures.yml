@@ -7,7 +7,6 @@ one:
   anee: 1
   marque: MyString
   garage: one
-  proprietaire: MyString
 
 two:
   numero_immatriculation: MyString
@@ -16,4 +15,3 @@ two:
   anee: 1
   marque: MyString
   garage: two
-  proprietaire: MyString

@@ -1,0 +1,37 @@
+<%= form_with(model: info_commande) do |form| %>
+  <% if info_commande.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(info_commande.errors.count, "error") %> prohibited this info_commande from being saved:</h2>
+
+      <ul>
+        <% info_commande.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :commande_id, style: "display: block" %>
+    <%= form.text_field :commande_id %>
+  </div>
+
+  <div>
+    <%= form.label :details, style: "display: block" %>
+    <%= form.textarea :details %>
+  </div>
+
+  <div>
+    <%= form.label :statut, style: "display: block" %>
+    <%= form.text_field :statut %>
+  </div>
+
+  <div>
+    <%= form.label :raison_retard, style: "display: block" %>
+    <%= form.text_field :raison_retard %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

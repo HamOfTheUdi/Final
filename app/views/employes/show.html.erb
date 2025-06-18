@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @employe %>
+
+<div>
+  <%= link_to "Edit this employe", edit_employe_path(@employe) %> |
+  <%= link_to "Back to employes", employes_path %>
+
+  <%= button_to "Destroy this employe", @employe, method: :delete %>
+</div>

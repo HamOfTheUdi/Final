@@ -19,7 +19,6 @@ class VoituresTest < ApplicationSystemTestCase
     fill_in "Garage", with: @voiture.garage_id
     fill_in "Marque", with: @voiture.marque
     fill_in "Numero immatriculation", with: @voiture.numero_immatriculation
-    fill_in "Proprietaire", with: @voiture.proprietaire
     fill_in "Statut", with: @voiture.statut
     click_on "Create Voiture"
 
@@ -36,7 +35,6 @@ class VoituresTest < ApplicationSystemTestCase
     fill_in "Garage", with: @voiture.garage_id
     fill_in "Marque", with: @voiture.marque
     fill_in "Numero immatriculation", with: @voiture.numero_immatriculation
-    fill_in "Proprietaire", with: @voiture.proprietaire
     fill_in "Statut", with: @voiture.statut
     click_on "Update Voiture"
 

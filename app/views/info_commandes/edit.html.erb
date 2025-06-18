@@ -1,0 +1,12 @@
+<% content_for :title, "Editing info commande" %>
+
+<h1>Editing info commande</h1>
+
+<%= render "form", info_commande: @info_commande %>
+
+<br>
+
+<div>
+  <%= link_to "Show this info commande", @info_commande %> |
+  <%= link_to "Back to info commandes", info_commandes_path %>
+</div>

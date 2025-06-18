@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @garage %>
+
+<div>
+  <%= link_to "Edit this garage", edit_garage_path(@garage) %> |
+  <%= link_to "Back to garages", garages_path %>
+
+  <%= button_to "Destroy this garage", @garage, method: :delete %>
+</div>

@@ -1,0 +1,2 @@
+class Transporteur < ApplicationRecord
+end

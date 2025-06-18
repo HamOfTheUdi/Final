@@ -5,11 +5,9 @@ one:
   prix: 9.99
   stock: 1
   voiture: one
-  commande: one
 
 two:
   nom: MyString
   prix: 9.99
   stock: 1
   voiture: two
-  commande: two
