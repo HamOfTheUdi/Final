@@ -1,16 +1,12 @@
-<h1>Bienvenue au Garage!</h1>
-<p>Bienvenue sur notre site de gestion de garage.</p>
+<h1>Bienvenue à votre gestionnaire de garage 🧰</h1>
 
-<ul>
-  <li><%= link_to 'Garages', garages_path %></li>
-  <li><%= link_to 'Voitures', voitures_path %></li>
-  <li><%= link_to 'Propriétaires', proprietaires_path %></li>
-  <li><%= link_to 'Employés', employes_path %></li>
-  <li><%= link_to 'Services', services_path %></li>
-  <li><%= link_to 'Parties', parties_path %></li>
-  <li><%= link_to 'Fournisseurs', fournisseurs_path %></li>
-  <li><%= link_to 'Transporteurs', transporteurs_path %></li>
-  <li><%= link_to 'Commandes', commandes_path %></li>
-  <li><%= link_to 'Infos Commandes', info_commandes_path %></li>
-</ul>
+<% if user_signed_in? %>
+  <p>Connecté en tant que <%= current_user.email %></p>
+  <%= link_to "Aller au tableau de bord", dashboard_path %> |
+  <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to "Se connecter", new_user_session_path %> |
+  <%= link_to "Créer un compte", new_user_registration_path %>
+<% end %>
+
 

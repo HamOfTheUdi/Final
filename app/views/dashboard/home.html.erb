@@ -1,0 +1,35 @@
+<h1 style="text-align: center;">Tableau de bord</h1>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px; padding-top: 1rem;">
+  <%= link_to "Garages", garages_path, class: "dashboard-link" %>
+  <%= link_to "Voitures", voitures_path, class: "dashboard-link" %>
+  <%= link_to "Propriétaires", proprietaires_path, class: "dashboard-link" %>
+  <%= link_to "Services", services_path, class: "dashboard-link" %>
+  <%= link_to "Employés", employes_path, class: "dashboard-link" %>
+  <%= link_to "Parties", parties_path, class: "dashboard-link" %>
+  <%= link_to "Commandes", commandes_path, class: "dashboard-link" %>
+  <%= link_to "Infos Commandes", info_commandes_path, class: "dashboard-link" %>
+  <%= link_to "Fournisseurs", fournisseurs_path, class: "dashboard-link" %>
+  <%= link_to "Transporteurs", transporteurs_path, class: "dashboard-link" %>
+</div>
+
+<style>
+  .dashboard-link {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 320px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .dashboard-link:hover {
+    background-color: #444;
+  }
+</style>
+
+
+
